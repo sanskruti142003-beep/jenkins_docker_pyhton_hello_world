@@ -1,7 +1,7 @@
-FROM	python:3.9-slim-buster
+FROM	openjdk:11
 
 WORKDIR	/app
 
-COPY	hello.py /app
+COPY	helloworld.java /app
 
-CMD	["python3","hello.py"]
+CMD	["java","helloworld.java"]

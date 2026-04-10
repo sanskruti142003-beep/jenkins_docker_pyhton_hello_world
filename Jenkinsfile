@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'hello-world-python:latest'
+        DOCKER_IMAGE = 'java-world-python:latest'
     }
 
     stages {
         stage('Checkout') {
             steps {
                 // Ensure the URL is in single quotes
-                git branch: 'main', url: 'https://github.com/sanskruti142003-beep/jenkins_docker_pyhton_hello_world.git'
+                git branch: 'main', url: 'https://github.com/sanskruti142003-beep/jenkins_docker_java__hello_world.git'
             }
         }
 
