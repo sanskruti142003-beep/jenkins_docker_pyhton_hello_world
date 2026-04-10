@@ -1,14 +1,13 @@
 pipeline {
 	agent any
 
-	envieonment {
+	environment {
 		DOCKER_IMAGE = 'hello-world-python:latest' //Docker image name
 	}
 	stages {
-		satge('Checkout') {
+		stage('Checkout') {
 			steps {
-				git branch: 'main' , url:
-				https://github.com/sanskruti142003-beep/jenkins_docker_pyhton_hello_world.git
+				git branch: 'main' , url:https://github.com/sanskruti142003-beep/jenkins_docker_pyhton_hello_world.git
 			      }
 			}
 	stage ('Docker Build') {
