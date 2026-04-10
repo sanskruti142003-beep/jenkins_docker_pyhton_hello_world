@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Ensure the URL is in single quotes
-                git branch: 'main', url: 'https://github.com/sanskruti142003-beep/jenkins_docker_java__hello_world.git'
+                git branch: 'main', url: 'https://github.com/sanskruti142003-beep/jenkins_docker_java_hello_world.git'
             }
         }
 
